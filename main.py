@@ -18,7 +18,7 @@ def main():
         
         def on_scraping_ready():
             connecting.stop()
-            # print() 
+            print("Buscando:") 
             progress.start()
 
         scraped = scrape_prices(products, on_ready=on_scraping_ready)
@@ -43,7 +43,7 @@ def main():
         print(products)
         return
 
-    print("Uso incorrecto")
+    print("Llamadas válidas: ")
     print("python main.py")
     print("python main.py upgrade")
 

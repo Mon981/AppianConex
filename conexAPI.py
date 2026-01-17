@@ -26,7 +26,8 @@ def get_product_map():
     try:
         products = get_api()
         return [
-            {
+            {   
+                "id": product.get("id"),
                 "nombre": product.get("nombre"),
                 "precio": product.get("precio")
             }
